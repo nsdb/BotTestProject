@@ -27,14 +27,22 @@ class BotTestProjectTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
+        
+        // Configuration
         #if DEBUG
         XCTAssert(false)
         #else
         XCTAssert(true)
         #endif
-        
-        XCTAssert(TestValue)
 
+        // Swift access
+        XCTAssert(TestValue)
+        XCTAssert(AppDelegate.TestValueFunc())
+        
+        // ObjectiveC access
+        XCTAssert(Int(TEST_VALUE) == 1)
+        XCTAssert(TestValueExtern.boolValue)
+        
     }
 
 

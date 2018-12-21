@@ -13,6 +13,8 @@
 		BE95784F21CCF0F500284660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE95784E21CCF0F500284660 /* Assets.xcassets */; };
 		BE95785221CCF0F500284660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE95785021CCF0F500284660 /* LaunchScreen.storyboard */; };
 		BE95785D21CCF0F500284660 /* BotTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE95785C21CCF0F500284660 /* BotTestProjectTests.swift */; };
+		BEE94DD421CD0AE100F1E07B /* BotTestProjectTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE94DD321CD0AE100F1E07B /* BotTestProjectTests2.m */; };
+		BEE94DD821CD0CBB00F1E07B /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE94DD721CD0CBB00F1E07B /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,11 @@
 		BE95785821CCF0F500284660 /* BotTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE95785C21CCF0F500284660 /* BotTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotTestProjectTests.swift; sourceTree = "<group>"; };
 		BE95785E21CCF0F500284660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE94DD221CD0AE000F1E07B /* BotTestProjectTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BotTestProjectTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEE94DD321CD0AE100F1E07B /* BotTestProjectTests2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BotTestProjectTests2.m; sourceTree = "<group>"; };
+		BEE94DD521CD0CBA00F1E07B /* BotTestProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BotTestProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEE94DD621CD0CBB00F1E07B /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		BEE94DD721CD0CBB00F1E07B /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,9 @@
 				BE95784E21CCF0F500284660 /* Assets.xcassets */,
 				BE95785021CCF0F500284660 /* LaunchScreen.storyboard */,
 				BE95785321CCF0F500284660 /* Info.plist */,
+				BEE94DD621CD0CBB00F1E07B /* TestObject.h */,
+				BEE94DD721CD0CBB00F1E07B /* TestObject.m */,
+				BEE94DD521CD0CBA00F1E07B /* BotTestProject-Bridging-Header.h */,
 			);
 			path = BotTestProject;
 			sourceTree = "<group>";
@@ -92,6 +102,8 @@
 			children = (
 				BE95785C21CCF0F500284660 /* BotTestProjectTests.swift */,
 				BE95785E21CCF0F500284660 /* Info.plist */,
+				BEE94DD321CD0AE100F1E07B /* BotTestProjectTests2.m */,
+				BEE94DD221CD0AE000F1E07B /* BotTestProjectTests-Bridging-Header.h */,
 			);
 			path = BotTestProjectTests;
 			sourceTree = "<group>";
@@ -146,9 +158,11 @@
 				TargetAttributes = {
 					BE95784321CCF0F300284660 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					BE95785721CCF0F500284660 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = BE95784321CCF0F300284660;
 					};
 				};
@@ -198,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE95784A21CCF0F400284660 /* ViewController.swift in Sources */,
+				BEE94DD821CD0CBB00F1E07B /* TestObject.m in Sources */,
 				BE95784821CCF0F400284660 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE94DD421CD0AE100F1E07B /* BotTestProjectTests2.m in Sources */,
 				BE95785D21CCF0F500284660 /* BotTestProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProject/Info.plist;
@@ -370,6 +387,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProject/BotTestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProject/Info.plist;
@@ -389,6 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProject/BotTestProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -399,6 +420,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProjectTests/Info.plist;
@@ -409,6 +431,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProjectTests/BotTestProjectTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BotTestProject.app/BotTestProject";
@@ -420,6 +444,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProjectTests/Info.plist;
@@ -430,6 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProjectTests/BotTestProjectTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BotTestProject.app/BotTestProject";
@@ -498,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProject/Info.plist;
@@ -508,6 +535,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProject/BotTestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -518,6 +547,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProjectTests/Info.plist;
@@ -528,6 +558,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProjectTests/BotTestProjectTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BotTestProject.app/BotTestProject";
@@ -599,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProject/Info.plist;
@@ -609,6 +642,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProject/BotTestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -619,6 +654,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5Q65927T;
 				INFOPLIST_FILE = BotTestProjectTests/Info.plist;
@@ -629,6 +665,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = futurewiz.BotTestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BotTestProjectTests/BotTestProjectTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BotTestProject.app/BotTestProject";

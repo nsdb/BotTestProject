@@ -6,18 +6,32 @@
 //  Copyright © 2018년 futurewiz. All rights reserved.
 //
 
+// 이 방식은 Objective C 에서 접근할 수 없다.
 #if DEBUG
 let TestValue: Bool = false
 #else
 let TestValue: Bool = true
 #endif
 
-
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    // 클래스 안에 넣은 후, @objc를 넣어야 한다.
+    @objc
+    static func TestValueFunc() -> Bool {
+        #if DEBUG
+        return false
+        #else
+        return true
+        #endif
+    }
+
+    
+    
+    
+    
 
     var window: UIWindow?
 
